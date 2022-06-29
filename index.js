@@ -30,8 +30,7 @@ const number = document.querySelectorAll('.numb')
     
 
     function thehello(){
-
-        var elem = document.getElementsByClassName("images");
+        var elem = $('.images')
         for(var i =0 ;i<=elem.length;i++)
         {
             elem[i].style.transform = 'scale(1)';
@@ -43,7 +42,8 @@ const number = document.querySelectorAll('.numb')
 
     function hello(h) {
 
-        var elem = document.getElementsByClassName("images");
+
+        var elem = $('.images')
         for(var i=0 ;i<=elem.length;i++) {
             if(i==h){
                 elem[h].style.transform = 'scale(1.4)';
