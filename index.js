@@ -38,7 +38,16 @@ const number = document.querySelectorAll('.numb')
         }
     }
   
- 
+    function emname() {
+        var elem = $('.images')
+        for (var i =0 ; i<=elem.length;i++){
+            elem[i].style.visibility = 'hidden';
+        }
+
+    
+    }
+    
+    // emname();
 
     function hello(h) {
 
@@ -47,9 +56,11 @@ const number = document.querySelectorAll('.numb')
         for(var i=0 ;i<=elem.length;i++) {
             if(i==h){
                 elem[h].style.transform = 'scale(1.4)';
+                // elem[h].style.visibility = 'hidden';
             }
             else {
                 elem[i].style.transform = 'scale(0.7)';
+                // elem[i].style.visibility = 'hidden';
                 elem[i].style.opacity = '20%';
             }
         }
@@ -93,3 +104,4 @@ const number = document.querySelectorAll('.numb')
         }
         this.classList.add('active');
     }
+
